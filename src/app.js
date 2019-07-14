@@ -10,17 +10,6 @@ import "normalize.css/normalize.css";
 import "./styles/style.scss";
 
 const store = configureStore();
-console.log(store.getState());
-
-const unsubscribe = store.subscribe(() => {
-    const state = store.getState();
-    const visibleExpense = selectExpenses(state.expenses, state.filters);
-    console.log(visibleExpense);
-});
-
-store.dispatch(addExpense({ description: "Water bill", amount: 4500 }));
-store.dispatch(addExpense({ description: "Gas bill", createdAt: 1000 }));
-store.dispatch(addExpense({ description: "Rent", amount: 109500 }));
 
 const jsx = (
     <Provider store={store}>
