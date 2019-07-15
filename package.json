@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "serve": "live-server ./public",
     "build": "webpack",
+    "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server --mode development --host 0.0.0.0",
     "test": "jest --watchAll --config=jest.config.json --no-cache"
   },
@@ -38,6 +40,7 @@
     "enzyme-to-json": "^3.3.5",
     "jest": "^24.8.0",
     "jest-css-modules": "^2.1.0",
+    "mini-css-extract-plugin": "^0.7.0",
     "raf": "^3.4.1",
     "react-test-renderer": "^16.8.6",
     "sass-loader": "^7.1.0",
