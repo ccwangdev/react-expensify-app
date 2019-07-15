@@ -46,7 +46,7 @@ const webpackConfig = (env) => {
         devtool: isProduction ? "source-map" : "inline-source-map",
         plugins:[
             new MiniCssExtractPlugin({
-                filename: "style.css"
+                filename: "styles.css"
             })
         ],
     };
