@@ -2,8 +2,5 @@ node_modules/
 src/hoc.js
 src/redux-101.js
 src/redux-expensify.js
-public/bundle.js
-public/bundle.js.map
-public/styles.css
-public/styles.css.map
+public/dist
 .gitignore

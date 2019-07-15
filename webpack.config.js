@@ -7,7 +7,7 @@ const webpackConfig = (env) => {
     return {
         entry: ["@babel/polyfill", "./src/app.js"],
         output: {
-            path: path.join(__dirname, "./public"),
+            path: path.join(__dirname, "./public", "dist"),
             filename: "bundle.js"
         },
         module:{
@@ -40,7 +40,7 @@ const webpackConfig = (env) => {
         },
         devServer: {
             contentBase: path.join(__dirname, "./public"),
-            publicPath: "/",
+            publicPath: "/dist/",
             historyApiFallback: true
         },
         devtool: isProduction ? "source-map" : "inline-source-map",
