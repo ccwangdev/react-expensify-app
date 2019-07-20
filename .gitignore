@@ -4,3 +4,5 @@ src/redux-101.js
 src/redux-expensify.js
 public/dist
 .gitignore
+.env.test
+.env.development
